@@ -5,9 +5,9 @@
 
 * ``` $ git clone https://github.com/ragmha/snaake```
 
-* ``` $ npm install```
+* ``` $ yarn install```
 
-* ``` $ npm start -s```
+* ``` $ yarn start -s```
 
 
 ## License
