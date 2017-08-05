@@ -1,3 +1,4 @@
+import Game from './game';
 import Drawing from './drawing';
 import Score from './score';
 import options from './options';
@@ -44,12 +45,14 @@ class Snake {
       this.y < 0 ||
       this.y >= options.rows
     ) {
+      Game.die();
       return;
     }
 
     let cell = [this.x, this.y];
 
     if (contains(this.segments, cell)) {
+      Game.die();
       return;
     }
 
@@ -83,6 +86,7 @@ class Snake {
     }
 
     if (freeSpots.length === 0) {
+      Game.win();
       return;
     }
     let index = (Math.random() * freeSpots.length) | 0;
