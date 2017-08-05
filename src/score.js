@@ -23,10 +23,10 @@ const reset = () => {
   updateHighScore();
 };
 
-const value = () => score;
-
 export default {
   increment,
   reset,
-  value,
+  get value() {
+    return score;
+  },
 };
