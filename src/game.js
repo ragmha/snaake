@@ -9,7 +9,7 @@ const init = () => {
   Drawing.reset();
   let snake = new Snake(options.startX, options.startY);
   snake[options.startDirection]();
-  Snake.reset();
+  Score.reset();
   newFrame();
   window.onkeydown = e => {
     let keyMethods = {
