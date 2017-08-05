@@ -3,20 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>🐍 snaake</title>
+  <title>🐍 snake</title>
   <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h2 class="text-center">🐍 snaake</h2>
-      <p class="lead text-center">🔥 🔥 🔥 🔥</p>
+      <h2 class="text-center">🐍 Snake</h2>
+      <div class="lead text-center">Score: <span id="score">0</span>
+        <div>High Score: <span id="highScore">0</span></div><br>
+        <canvas id="canvas"></canvas>
+      </div>
     </div>
-  </div>
 
-  <!-- Transpiled to ES6 via Babel. Packaged up via Webpack. -->
-  <script type="text/javascript" src="dist/bundle.js"></script>
+    <!-- Transpiled to ES6 via Babel. Packaged up via Webpack. -->
+    <script type="text/javascript" src="dist/bundle.js"></script>
 </body>
 
 </html>
