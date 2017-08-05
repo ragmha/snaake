@@ -4,8 +4,10 @@ import Score from './score';
 import options from './options';
 
 const contains = (cells, cell) => {
-  for (let i = 0; i < cell.length; i++) {
-    if (cells[i][0] === cell[0] && cells[i][1] === cell[1]) return true;
+  for (let i = 0; i < cells.length; i++) {
+    if (cells[i][0] === cell[0] && cells[i][1] === cell[1]) {
+      return true;
+    }
   }
   return false;
 };
