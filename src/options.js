@@ -1,6 +1,6 @@
 export default {
   width: 500,
-  height: 500,
+  height: 450,
   rows: 25,
   cols: 25,
   timeStep: 100,
